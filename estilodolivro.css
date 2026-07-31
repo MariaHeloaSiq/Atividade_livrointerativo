@@ -1,0 +1,131 @@
+/*=========================================================
+                    PALETA DE CORES
+===========================================================
+
+Essas são as cores principais do livro.
+Caso queira mudar o visual inteiro, basta alterar aqui.
+
+Coral............. #FF9A86
+Pêssego........... #FFB399
+Creme............. #FFD6A6
+Amarelo Claro..... #FFF0BE
+
+=========================================================*/
+
+:root{
+
+    /* Cor principal (botões e detalhes) */
+    --cor-principal: #FF9A86;
+
+    /* Cor secundária (hover e destaques) */
+    --cor-secundaria: #FFB399;
+
+    /* Cor das caixas */
+    --cor-caixa: #FFD6A6;
+
+    /* Cor do fundo */
+    --cor-fundo: #FFF0BE;
+
+    /* Branco */
+    --branco: #FFFFFF;
+
+    /* Texto */
+    --texto: #444444;
+}
+
+
+/*=========================================================
+                CONFIGURAÇÕES GERAIS
+===========================================================
+
+Esta parte configura a página inteira.
+
+=========================================================*/
+
+/* Remove margens e espaçamentos automáticos */
+*{
+    margin: 0;
+    padding: 0;
+
+    /* Faz com que padding e bordas contem no tamanho */
+    box-sizing: border-box;
+}
+
+/* Corpo principal da página */
+body{
+
+    /* Cor de fundo */
+    background-color: var(--cor-fundo);
+
+    /* Fonte usada */
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* Cor do texto */
+    color: var(--texto);
+
+    /* Espaço interno */
+    padding: 30px;
+}
+
+
+/*=========================================================
+                      CABEÇALHO
+=========================================================*/
+
+header{
+
+    /* Cor do fundo */
+    background-color: var(--cor-principal);
+
+    /* Cor do texto */
+    color: var(--branco);
+
+    /* Centraliza tudo */
+    text-align: center;
+
+    /* Espaçamento interno */
+    padding: 25px;
+}
+
+
+/*=========================================================
+                        BOTÕES
+===========================================================
+
+Todos os botões do livro terão este estilo.
+
+=========================================================*/
+
+button{
+
+    /* Cor do botão */
+    background-color: var(--cor-principal);
+
+    /* Cor da letra */
+    color: var(--branco);
+
+    /* Remove a borda padrão */
+    border: none;
+
+    /* Arredonda os cantos */
+    border-radius: 30px;
+
+    /* Espaçamento interno */
+    padding: 12px 30px;
+
+    /* Cursor de clique */
+    cursor: pointer;
+
+    /* Animação suave */
+    transition: .3s;
+}
+
+/* Quando o mouse passar por cima */
+button:hover{
+
+    /* Troca a cor */
+    background-color: var(--cor-secundaria);
+
+    /* Dá um leve aumento */
+    transform: scale(1.05);
+}
